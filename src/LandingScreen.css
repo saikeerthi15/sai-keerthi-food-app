@@ -1,0 +1,19 @@
+.Landing-heading{
+    align-items: center;
+    position:relative;
+    left: 0px;
+    margin-top: 0px; 
+}
+h2{
+    font-family: ui-sans-serif;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100vw;
+   
+
+}
+.Landing-inputSearch{
+    width: 600px;
+}
