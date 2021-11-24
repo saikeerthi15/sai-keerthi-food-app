@@ -1,0 +1,16 @@
+.Tags-Container{
+  display: flex;
+justify-content: flex-start;
+padding: 20px;
+position: relative;
+    left: 59px;
+}
+.Tags-Container.ant-tag {
+    border: 2px solid orangered;
+        height: 40px;
+        width: 150px;
+        background: white;
+        text-align: center;
+        padding: 7px;
+        font-size: 20px;
+}

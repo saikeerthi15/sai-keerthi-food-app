@@ -1,0 +1,68 @@
+.CardItems.ant-card-body{
+   padding: 10px !important;
+   height: 233px !important;
+    
+}
+.CardItems img {
+    height: 250px;
+    border-radius: 5px;
+    width: 400px;
+}
+.Card-content{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    justify-items: center;
+    width: 100%;
+    height: 100vh;
+   row-gap: 30px;
+}
+.CardsFor-MainContainer h2{
+    display: flex;
+    position: relative;
+    left: 59px;
+    padding: 20px;
+    width:100vw;
+}
+.Cardminutes{
+position: relative;
+border: none;
+    bottom: 60px;
+    left: 85%;
+background: none;
+}
+
+
+.CardName.ant-card{
+    /* padding: 10px; */
+}
+.ant-badge-count{ 
+   background: none;
+   box-shadow: lightgray;
+} 
+.ant-card-meta-description{
+    display: flex;
+    justify-content:space-between;
+}
+.rate-Card{
+    text-align: center;
+}
+.Card-Items .ant-ribbon{
+    margin: 4px !important;
+}
+.OfferTag{
+    height: 40px !important;
+    width: 50% !important;
+
+    position: relative;
+    top: -33px;
+    left: 62px;
+}
+.MetaCard{
+   display: flex;
+   justify-content: space-between;
+  
+}
+.CarouselText{
+ 
+ 
+}

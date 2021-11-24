@@ -1,0 +1,10 @@
+.ant-breadcrumb{
+    display: flex;
+    /* justify-content: flex-start !important;
+    flex-direction: row; */
+}
+.Breadcrumb-MainContainer{
+    padding: 20px;
+    position: relative;
+    left: 59px;
+}

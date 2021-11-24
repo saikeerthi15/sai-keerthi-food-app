@@ -1,19 +1,81 @@
+img{
+    width :100% !important;
+    height :100vh;
+    display: block;
+   overflow: hidden;
+  }
 .Landing-heading{
-    align-items: center;
-    position:relative;
-    left: 0px;
-    margin-top: 0px; 
-}
-h2{
-    font-family: ui-sans-serif;
-}
-img {
-    vertical-align: middle;
-    border-style: none;
-    width: 100vw;
+    position: absolute;
+    top: 100px;
+    
+    display: flex;
+    
+    flex-direction: column;
+    width: 100%;
+    align-items: center; 
+  
    
+}
+h1{
+    margin-bottom:0px !important;
+    font-weight: bold;
+    color: #fafafa !important;
+    font-size: 100px;
+    font-family: 'Alfa Slab One', ;
+}
+.Landing-heading h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 10px;
+    font-family: 'Lusitana', serif;
+}
 
+.ant-input{
+     height: 40px;
 }
-.Landing-inputSearch{
-    width: 600px;
+.ant-btn{
+    height: 50px !important;
 }
+.ant-popover{
+    width: 590px !important;
+    max-height: 220px;
+    overflow: scroll;
+}
+.ant-popover::-webkit-scrollbar {
+    display: none;
+  }
+.CardHolder >.ant-card{
+   display: flex !important;
+   width: 100% !important;
+}
+.CardHolder >.ant-card-body{
+   
+    width: 100% !important;
+}
+.CardHolder >.ant-card-cover{
+    height: 110px;
+    width: 100% !important;
+}
+.ant-card-cover img {
+    width: 100% !important;
+    height: 100px;
+}
+.LandingScreen{
+    text-align:center;
+  }
+   
+    @media (max-width: 767px) {
+.LandingScreen{
+      text-align: center;
+    }
+}
+    @media (max-width: 400px) {
+.LandingScreen{
+    text-align: center;
+    padding:10px;
+}    
+.ant-btn{
+    width: 370px;
+}
+    }
+  
