@@ -1,7 +1,7 @@
 // import React from 'react';
 import { Badge, Card } from 'antd';
 import "./CardsForCarry.css";
-// import combineddata from "./imagesBackend";
+import combineddata from "./imagesBackend";
 
 import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router-dom";
@@ -34,9 +34,12 @@ function CardsForCarry(props) {
                 return { ...o }
             }
         }).filter(e => { return e != undefined });
-        // filterNonVegItems.forEach((a) => {
-        //     a.imagesBackendData = combineddata[Math.floor(Math.random() *19)];
-        //   });
+        debugger
+        filterHoltels.forEach((a) => {
+
+            a.imagesBackendData = combineddata[Math.floor(Math.random() *19)];
+          });
+          console.log(filterHoltels)
         setHotelKeywordData(filterHoltels)
 
     }, [])
@@ -58,7 +61,7 @@ function cardCarryClick(clickCard){
                             <Card
                                 hoverable
                                 style={{ width: 300 }}
-                                cover={<img alt="example" src="https://b.zmtcdn.com/data/dish_photos/b85/05fd3a41c8bde74a737e16a25bef9b85.jpg?output-format=webp" />}
+                                cover={<img alt="photo" src={o.imagesBackendData} />}
                             >
                             <div className="Cardminutes">
                                     <Badge  count={Math.floor(Math.random() * 30) + " mins"}></Badge>
@@ -91,7 +94,7 @@ function cardCarryClick(clickCard){
 
             </div>
 
-
+            <combineddata/>
         </div>
     );
 }

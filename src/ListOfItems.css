@@ -1,16 +1,25 @@
+body{
+  
+    
+    box-sizing: border-box;
+}
 .ListOfItems{
 display: flex;
-justify-content:space-around;
 width: 100vw;
+padding: 10px;
+flex-direction: column;
 }
 .ListOfItems img{
     width: 350px !important;
-    height: 270px !important;
+    height: 250px !important;
     border-radius: 10px;
 } 
 .ListOfItems>.ant-card{
-    width: 350px !important;
+    width: 80% !important;
+    height: 250px;
     border-radius: 10px;
+    display: flex;
+    
 }
 /* .ant-card-body img{
     width: 350px !important;
@@ -22,5 +31,10 @@ width: 100vw;
 } */
 .metalist{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: column;
+} 
+.itenRate{
+    display: flex;
+
 }

@@ -128,7 +128,7 @@ function LandingScreen(props) {
                 // value={clickedTadName}
                 placeholder="Search for restaurant, cuisine or a dish"
                 allowClear
-                onBlur={toHide}
+            
                 //  onSearch={onSearch}
                 style={{ width: 600 }}
               />
