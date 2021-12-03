@@ -108,7 +108,7 @@ function LandingScreen(props) {
     <div className="LandingScreen">
       <img className="backimg" src={zomotobackground}></img>
       <div className="Landing-heading">
-        <h1>zomato</h1>
+        <h1>Make My Lunch </h1>
         <h2>Discover the best food & drinks in Chennai</h2>
         <div className="Landing-inputSearch">
           <Space align="center">

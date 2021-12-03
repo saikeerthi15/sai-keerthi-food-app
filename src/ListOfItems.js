@@ -1,10 +1,15 @@
 import React from 'react';
-import { Card } from 'antd';
+import { Card, Space, Spin } from 'antd';
 import { Rate } from 'antd';
 import './ListOfItems.css';
 const { Meta } = Card;
 function ListOfItems(props) {
     return (
+        <div>
+             <Space size="middle">
+          <Spin size="large" />
+          </Space>
+        
         <div className="ListOfItems">
             <Card
                 hoverable
@@ -19,6 +24,7 @@ function ListOfItems(props) {
                   <Rate disabled defaultValue={Math.floor(Math.random() * (5-2) + 2)} /></div>
                 
             </Card>
+        </div>
         </div>
     );
 }

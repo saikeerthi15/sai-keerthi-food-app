@@ -6,7 +6,7 @@ import combineddata from "./imagesBackend";
 import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router-dom";
 import { Carousel } from 'antd';
-import { Rate } from 'antd';
+import { Rate, Space, Spin } from 'antd';
 const { Meta } = Card;
 
 
@@ -40,7 +40,10 @@ function CardsForCarry(props) {
             a.imagesBackendData = combineddata[Math.floor(Math.random() *19)];
           });
           console.log(filterHoltels)
-        setHotelKeywordData(filterHoltels)
+          setTimeout(() => {
+         setHotelKeywordData(filterHoltels)
+              
+          }, 1000);
 
     }, [])
 function cardCarryClick(clickCard){
@@ -52,6 +55,12 @@ function cardCarryClick(clickCard){
      
 }
     return (
+        <div>
+            {hotelKeywordData == 0 ? (
+        <Space size="middle">
+          <Spin size="large" />
+        </Space>
+            ) : (
         <div className="CardsFor-MainContainer">
             <h2>{historyCarry.location.state}Delivery Restaurants in Thiruporur, Chennai, India</h2>
             <div className="Card-content">
@@ -96,6 +105,8 @@ function cardCarryClick(clickCard){
 
             <combineddata/>
         </div>
+             )}
+              </div>
     );
 }
 

@@ -1,7 +1,7 @@
 .CardItems.ant-card-body{
    padding: 10px !important;
    height: 233px !important;
-    
+    align-items: center;
 }
 .CardItems img {
     height: 250px;
@@ -16,6 +16,10 @@
     height: 100vh;
    row-gap: 30px;
 }
+.CardsFor-MainContainer {
+   
+    
+}
 .CardsFor-MainContainer h2{
     display: flex;
     position: relative;
@@ -24,11 +28,11 @@
     width:100vw;
 }
 .Cardminutes{
-position: relative;
-border: none;
+    position: relative;
+    border: none;
     bottom: 60px;
     left: 85%;
-background: none;
+
 }
 
 
@@ -62,7 +66,7 @@ background: none;
    justify-content: space-between;
   
 }
-.CarouselText{
+.spin{
  
  
 }
