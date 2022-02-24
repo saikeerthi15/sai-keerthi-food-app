@@ -6,9 +6,9 @@ const { Meta } = Card;
 function ListOfItems(props) {
     return (
         <div>
-             <Space size="middle">
+             {/* <Space size="middle">
           <Spin size="large" />
-          </Space>
+          </Space> */}
         
         <div className="ListOfItems">
             <Card
