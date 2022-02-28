@@ -1,28 +1,24 @@
-import './App.css';
-import axios from 'axios';
-import LandingScreen from './LandingScreen';
-import { useEffect, useState } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import NextPage from './NextPage';
-import RestaurantPage from './RestaurantPage';
-
+import "./App.css";
+import axios from "axios";
+import LandingScreen from "./LandingScreen";
+import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import NextPage from "./NextPage";
+import RestaurantPage from "./RestaurantPage";
 
 function App() {
   var [restaurantData, setRestaurantData] = useState([]);
 
   useEffect(() => {
     async function getFoodData() {
-      var foodData = await axios.get("https://rcz-backend-arvinth.herokuapp.com/api/allResorts");
+      var foodData = await axios.get(
+        "https://rcz-backend-arvinth.herokuapp.com/api/allResorts"
+      );
       console.log(foodData.data);
-      setRestaurantData(foodData.data)
+      setRestaurantData(foodData.data);
     }
-    getFoodData()
-  }, [])
+    getFoodData();
+  }, []);
 
   return (
     <Router>
@@ -35,15 +31,13 @@ function App() {
 
         <Switch>
           <Route path="/category-nv">
-            <NextPage all_data={restaurantData}/>
+            <NextPage all_data={restaurantData} />
           </Route>
-
         </Switch>
         <Switch>
           <Route path="/resort">
-          <RestaurantPage/>
+            <RestaurantPage />
           </Route>
-
         </Switch>
       </div>
     </Router>
